@@ -1,0 +1,130 @@
+@import "./scss/mixins.scss";
+@import "./scss/variables.scss";
+* {
+  font-size: $base_font_size; // ? == 16px
+  font-family: $font_family_primary;
+  font-weight: $font_semi_bold;
+  color: $text_color_dark;
+}
+.vue-notification-wrapper {
+  .vue-notification {
+    @include mx($vw_1);
+    @include mt($vw_1);
+
+    cursor: pointer;
+    .notification-title {
+      color: $color_light;
+      text-transform: capitalize;
+      font-size: 0.9rem;
+      font-weight: $font_semi_bold;
+      @include mb($_10);
+    }
+    .notification-content {
+      color: $color_light;
+      text-transform: capitalize;
+      font-size: 0.75rem;
+      font-weight: $font_medium;
+    }
+    &.info {
+    }
+    &.success {
+    }
+    &.error {
+    }
+  }
+}
+.connectModal {
+  background-color: rgba($color: $color_dark, $alpha: 0.9);
+
+  box-shadow: 0px 0px 10px 10px rgba($color: $color_primary_dark, $alpha: 0.25);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+
+  width: 30%;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+    input {
+      width: 100%;
+      line-height: 40px;
+      padding: 0px 30px;
+      border-radius: 5px;
+      background-color: $color_light;
+      border: 2px solid $color_primary_light;
+      color: $color_secondary_dark;
+      margin: 10px 0;
+    }
+  }
+}
+.flexButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn {
+  line-height: 30px;
+  padding: 0px 30px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: $color_light;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 1.3rem;
+  &.actif {
+    color: $color_primary_light;
+    cursor: default;
+  }
+  &.submit {
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background-color: $color_primary_light;
+    color: $color_light;
+  }
+}
+.content {
+  background-color: rgba($color: $color_dark, $alpha: 0.9);
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+  border-radius: 5px;
+
+  h1 {
+    font-size: 6rem;
+    color: $color_primary_light;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2rem;
+    color: $color_primary_light;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: $color_secondary_light;
+  }
+  a.btn {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}

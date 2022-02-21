@@ -1,0 +1,49 @@
+{
+  "name": "ghanjo-gag",
+  "version": "1.0.0",
+  "description": "Lorem ipsum description",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js --ignore 'uploads/*' --ignore 'tests/*' --ignore 'node_modules/*' --ignore 'scripts/*'",
+    "test": "jest --detectOpenHandles --verbose --runInBand --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ghanjo-gag"
+  },
+  "author": "Ghanjo Gang",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "apn": "^2.2.0",
+    "async": "^2.6.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cluster": "^0.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "helmet": "^4.6.0",
+    "jest": "^25.2.7",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun.js": "^2.0.1",
+    "moment": "^2.24.0",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "mysql2": "^1.5.1",
+    "node-cron": "^2.0.3",
+    "nodemon": "^2.0.15",
+    "sharp": "^0.24.0",
+    "stripe": "^7.8.0",
+    "uuid": "^8.3.2",
+    "ws": "^7.5.6"
+  },
+  "devDependencies": {
+    "form-data": "^3.0.0"
+  }
+}

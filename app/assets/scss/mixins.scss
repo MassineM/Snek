@@ -1,0 +1,129 @@
+// ? Hover
+@mixin hover($color, $background_color) {
+    $hover_background_color : lighten($background_color, 10%);
+    &:hover{
+        color : $color;
+        background-color: $hover_background_color;
+    }
+}
+@mixin hover_transparent($color, $background_color) {
+    $hover_background_color : $background_color;
+    &:hover{
+        color : $color;
+        background-color: $hover_background_color;
+    }
+}
+// ? Capital first letter
+@mixin first-capital(){
+    &:first-letter{
+        text-transform: uppercase;
+    }
+}
+// ? Padding
+@mixin padding($var) {
+    padding: $var;
+}
+@mixin py($var) {
+    padding-top: $var;
+    padding-bottom: $var;
+}
+@mixin px($var) {
+    padding-left: $var;
+    padding-right: $var;
+}
+@mixin px-auto($var) {
+    padding: $var auto;
+}
+@mixin py-auto($var) {
+    padding: auto $var;
+}
+@mixin pb($var) {
+    padding-bottom: $var;
+}
+@mixin pt($var) {
+    padding-top: $var;
+}
+@mixin pl($var) {
+    padding-left: $var;
+}
+@mixin pr($var) {
+    padding-right: $var;
+}
+// ? Margin
+@mixin margin($var) {
+    margin: $var;
+}
+@mixin my($var) {
+    margin-top: $var;
+    margin-bottom: $var;
+}
+@mixin mx($var) {
+    margin-left: $var;
+    margin-right: $var;
+}
+@mixin mx-auto($var) {
+    margin: $var auto;
+}
+@mixin my-auto($var) {
+    margin: auto $var;
+}
+@mixin mb($var) {
+    margin-bottom: $var;
+}
+@mixin mt($var) {
+    margin-top: $var;
+}
+@mixin ml($var) {
+    margin-left: $var;
+}
+@mixin mr($var) {
+    margin-right: $var;
+}
+// ? Width 
+@mixin w-fit {
+    width: fit-content;
+}
+@mixin w100 {
+    width: 100%;
+}
+@mixin w50 {
+    width: 50%;
+}
+@mixin w($val) {
+    width: $val;
+}
+// ? Height 
+@mixin h-fit {
+    height: fit-content;
+}
+@mixin h100 {
+    height: 100%;
+}
+@mixin h($val) {
+    height: $val;
+}
+// ? Flex
+@mixin flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex_row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex_col {
+    display: flex;
+    flex-direction: column;
+}
+@mixin make_it_flex($direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+@mixin flex_col_center {
+    @include flex_center;
+    @include flex_col;
+}

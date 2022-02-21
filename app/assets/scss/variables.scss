@@ -1,0 +1,69 @@
+// ? COLORS
+$color_primary_light: #73b671;
+$color_primary_dark: #5a815b;
+$color_secondary_light: #e2d599;
+$color_secondary_dark: #85724b;
+$color_error: #c03030;
+$color_error_light: #ffecec;
+$color_success: #3dcc30;
+$color_success_light: #d9ffd5;
+$color_light: #ffffff;
+$color_dark: #43464c;
+// ? TEXT
+$text_color_light: $color_light;
+$text_color_dark: $color_dark;
+$text_color_primary: $color_primary_light;
+$text_color_secondary: $color_secondary_dark;
+// ? INPUT
+$color_input: $color_secondary_dark;
+$color_input_error: $color_error;
+$background_input: $color_secondary_light;
+$background_input_error: $color_error_light;
+$border_input: transparent;
+$border_input_error: $color_error;
+// ? FONTS
+$font_family_primary: "Montserrat-SemiBold", sans-serif;
+
+// ? FONTWEIGHT
+$font_thin: 100;
+$font_extra_light: 200;
+$font_light: 300;
+$font_regular: 400;
+$font_medium: 500;
+$font_semi_bold: 600;
+$font_bold: 700;
+$font_extra_bold: 800;
+$font_black: 900;
+// ? FONTSIZE
+$base_font_size: 14px;
+// ? MARGES
+$_0: 0px;
+$_10: 10px;
+$_20: 20px;
+$_30: 30px;
+$_40: 40px;
+$_50: 50px;
+$_100: 100px;
+$_150: 150px;
+$_200: 200px;
+$_250: 250px;
+$_500: 500px;
+$vw_0: 0vw;
+$vw_1: 1vw;
+$vw_2: 2vw;
+$vw_3: 3vw;
+$vw_4: 4vw;
+$vw_5: 5vw;
+$vw_6: 6vw;
+$vw_7: 7vw;
+$vw_8: 8vw;
+$vw_9: 9vw;
+$vw_10: 10vw;
+$vw_15: 15vw;
+$vw_20: 20vw;
+$vw_25: 25vw;
+$vw_30: 30vw;
+$vw_35: 35vw;
+$vw_40: 40vw;
+$vw_45: 45vw;
+$vw_50: 50vw;
