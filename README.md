@@ -6,7 +6,7 @@ Snek game online web platform
 
 #### Requirements
   1. Make sure you have installed ***Node.JS***:
-    https://nodejs.org/en/
+    _https://nodejs.org/en/_
 
 #### Install
   2. Install Node modules the following command in API + APP folders:
@@ -25,5 +25,5 @@ Snek game online web platform
 
 ## Credits:
 ###  Massine Mountasser
-####  aka. Grey Fox
-#### 2012
+####  _aka._ **Grey Fox**
+#### 2021
