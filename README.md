@@ -1,19 +1,25 @@
 # Snek
-Snek game online
+Snek game online web platform
 -----------------------------------------------------
 
-How to compile:
+## How to compile:
 
-1. Install Node modules:
-  Execute the following command in API + APP folders:
-    npm install
+## Install
+  1. Install Node modules the following command in API + APP folders:
+    ***npm install***
     
-2. Run API and APP servers:
-  Execute the following command in API + APP folders:
-    npm run dev
+## Build
+  2. Execute the following command to run API and APP servers:
+    ***npm run dev***
 
-3. Run WebGL server (Unity launcher):
-  Execute following command in API/WebGL folder:
-    node server.js
+  3. Execute following command in API/WebGL folder to run Unity launcher:
+    ***node server.js***
     
-Have fun!
+### Have fun!
+  
+-------------------------------------------------------------
+
+# Credits:
+##  Massine Mountasser
+##  aka. Grey Fox
+## 2012
