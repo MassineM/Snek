@@ -1,6 +1,8 @@
 # Snek
 Snek game online web platform
 -----------------------------------------------------
+### Documentation:
+  https://drive.google.com/drive/folders/1MBxafTs_8j3sfb3N234DIz1ZGuPNlo5r?usp=sharing
 
 ### How to compile:
 
