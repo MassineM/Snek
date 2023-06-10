@@ -1,17 +1,20 @@
 @import "./scss/mixins.scss";
 @import "./scss/variables.scss";
+
 * {
   font-size: $base_font_size; // ? == 16px
   font-family: $font_family_primary;
   font-weight: $font_semi_bold;
   color: $text_color_dark;
 }
+
 .vue-notification-wrapper {
   .vue-notification {
     @include mx($vw_1);
     @include mt($vw_1);
 
     cursor: pointer;
+
     .notification-title {
       color: $color_light;
       text-transform: capitalize;
@@ -19,20 +22,22 @@
       font-weight: $font_semi_bold;
       @include mb($_10);
     }
+
     .notification-content {
       color: $color_light;
       text-transform: capitalize;
       font-size: 0.75rem;
       font-weight: $font_medium;
     }
-    &.info {
-    }
-    &.success {
-    }
-    &.error {
-    }
+
+    &.info {}
+
+    &.success {}
+
+    &.error {}
   }
 }
+
 .connectModal {
   background-color: rgba($color: $color_dark, $alpha: 0.9);
 
@@ -44,6 +49,7 @@
   border-radius: 5px;
 
   width: 30%;
+
   form {
     display: flex;
     flex-direction: column;
@@ -51,6 +57,7 @@
     justify-content: center;
     padding: 30px;
     width: 100%;
+
     input {
       width: 100%;
       line-height: 40px;
@@ -63,12 +70,14 @@
     }
   }
 }
+
 .flexButtons {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .btn {
   line-height: 30px;
   padding: 0px 30px;
@@ -78,10 +87,12 @@
   margin: 10px 0;
   cursor: pointer;
   font-size: 1.3rem;
+
   &.actif {
     color: $color_primary_light;
     cursor: default;
   }
+
   &.submit {
     width: 100%;
     line-height: 50px;
@@ -90,6 +101,7 @@
     color: $color_light;
   }
 }
+
 .content {
   background-color: rgba($color: $color_dark, $alpha: 0.9);
   width: 50%;
@@ -107,12 +119,14 @@
     margin-bottom: 30px;
     text-align: center;
   }
+
   h2 {
     font-size: 2rem;
     color: $color_primary_light;
     margin-bottom: 30px;
     text-align: center;
   }
+
   p {
     font-size: 1.4rem;
     letter-spacing: 2px;
@@ -122,9 +136,108 @@
     text-align: center;
     color: $color_secondary_light;
   }
+
   a.btn {
     width: 50%;
     margin: 0 auto;
     margin-top: 30px;
+  }
+}
+
+
+
+.center {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-image: url("../assets/img/bgb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  width: 100%;
+  background-color: rgba($color: $color_dark, $alpha: 0.9);
+  padding: 10px 0;
+
+  div.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    img {
+      height: 50px;
+      cursor: pointer;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: nowrap;
+
+      li {
+        line-height: 50px;
+        padding: 0 30px;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 1.3rem;
+        color: $color_light;
+        text-transform: uppercase;
+
+        &.clickable {
+          transition: color 0.5s;
+
+          &:hover {
+            color: $color_secondary_light;
+          }
+        }
+
+        &.username {
+          color: $color_primary_light;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: rgba($color: $color_dark, $alpha: 1);
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      line-height: 30px;
+      padding: 0 30px;
+      color: $color_light;
+      font-size: 0.75rem;
+      cursor: default;
+    }
   }
 }

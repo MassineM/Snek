@@ -5,7 +5,7 @@
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 iframe {
   width: 72vw;
   height: 45vw;

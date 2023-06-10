@@ -36,7 +36,7 @@ module.exports = {
   /*x
    ** Global CSS
    */
-  css: ["~/assets/reset.css", "~/assets/main.scss"],
+  css: ["~/assets/reset.css", "~/assets/main.css"],
 
   /*
    ** Plugins to load before mounting the App
@@ -100,7 +100,7 @@ module.exports = {
   },
   server: {
     port: 8080,
-    host: "192.168.1.63",
+    host: "localhost",
     secure: true,
   },
 };

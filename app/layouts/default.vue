@@ -20,9 +20,7 @@
           >
             {{ $store.state.auth.user.username }}
           </li>
-          <li class="clickable" @click="$router.push('/scores')">
-            Scores
-          </li>
+          <li class="clickable" @click="$router.push('/scores')">Scores</li>
           <li class="clickable" v-if="$store.state.auth" @click="logout()">
             Se deconnecter
           </li>
@@ -121,7 +119,8 @@ export default {
         email: "",
         password: "",
       },
-      reg_mail: /^(([^<>()[\],;:\s@]+(\.[^<>()[\],;:\s@]+)*)|(.+))@(([^<>()[\],;:\s@]+\.)+[^<>()[\],;:\s@]{2,})$/i,
+      reg_mail:
+        /^(([^<>()[\],;:\s@]+(\.[^<>()[\],;:\s@]+)*)|(.+))@(([^<>()[\],;:\s@]+\.)+[^<>()[\],;:\s@]{2,})$/i,
     };
   },
   mounted: function () {},
@@ -141,6 +140,7 @@ export default {
             title: "Champ obligatoire",
             text: "Votre pseudo n'est pas valide !",
           });
+          console.log(text);
           return false;
         }
         if (this.user.password !== this.user.confirm_password) {
@@ -150,6 +150,7 @@ export default {
             title: "Champ obligatoire",
             text: "Vos deux mot de passe ne correspondent pas !",
           });
+          console.log(text);
           return false;
         }
       }
@@ -163,6 +164,7 @@ export default {
           title: "Champ obligatoire",
           text: "Votre adresse mail n'est pas valide !",
         });
+        console.log(text);
         return false;
       }
       if (this.user.password.trim().length < 8) {
@@ -172,6 +174,7 @@ export default {
           title: "Champ obligatoire",
           text: "Votre mot de passe n'est pas valide !",
         });
+        console.log(text);
         return false;
       }
 
@@ -208,8 +211,7 @@ export default {
               type: "error",
               title: "Oups !",
               duration: 4000,
-              text:
-                "Une erreur s'est produite lors de la création de votre compte, veuilliez rééssayer",
+              text: "Une erreur s'est produite lors de la création de votre compte, veuilliez rééssayer",
             });
           });
       }
@@ -252,8 +254,7 @@ export default {
               type: "error",
               title: "Oups !",
               duration: 4000,
-              text:
-                "Une erreur s'est produite lors de la tentative de connexion, veuilliez rééssayer",
+              text: "Une erreur s'est produite lors de la tentative de connexion, veuillez réessayer",
             });
           });
       }
@@ -266,86 +267,4 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-.center {
-  width: 80%;
-  margin: 0 auto;
-}
-.container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-main {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  background-image: url("../assets/img/bgb.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-nav {
-  width: 100%;
-  background-color: rgba($color: $color_dark, $alpha: 0.9);
-  padding: 10px 0;
-  div.center {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    img {
-      height: 50px;
-      cursor: pointer;
-      transition: transform 0.5s;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-    ul {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-wrap: nowrap;
-      li {
-        line-height: 50px;
-        padding: 0 30px;
-        white-space: nowrap;
-        cursor: pointer;
-        font-size: 1.3rem;
-        color: $color_light;
-        text-transform: uppercase;
-        &.clickable {
-          transition: color 0.5s;
-          &:hover {
-            color: $color_secondary_light;
-          }
-        }
-        &.username {
-          color: $color_primary_light;
-          cursor: default;
-        }
-      }
-    }
-  }
-}
-footer {
-  background-color: rgba($color: $color_dark, $alpha: 1);
-  ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    li {
-      line-height: 30px;
-      padding: 0 30px;
-      color: $color_light;
-      font-size: 0.75rem;
-      cursor: default;
-    }
-  }
-}
-</style>
+<style lang="css" scoped></style>

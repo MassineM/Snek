@@ -16,7 +16,7 @@ let connectDB = async () => {
   };
   await mongoose
     .connect(
-      `mongodb+srv://root:F1LBrGOgE0dWHpxPirYaYO1rrkl5xfhA@$cluster0.vjnzq.mongodb.net/test`,
+      `mongodb+srv://gfox841:ebccd84159@cluster0.d6nmlhd.mongodb.net/?retryWrites=true&w=majority`,
       options
     )
     .then(() => {
