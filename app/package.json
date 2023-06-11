@@ -1,8 +1,8 @@
 {
-  "name": "ghanjo-gag",
+  "name": "Snek",
   "version": "1.0.0",
-  "description": "Ghanjo-gag. - developped by Heddex",
-  "author": "Heddex",
+  "description": "Snek - developped by Grey Fox",
+  "author": "Grey Fox",
   "private": true,
   "scripts": {
     "dev": "nuxt --port 8080",
